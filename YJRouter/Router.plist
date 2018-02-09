@@ -2,13 +2,13 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>APPTicket</key>
+	<key>HYJAPP</key>
 	<dict>
-		<key>APPTicket://AAAViewController</key>
+		<key>HYJAPP://AAAViewController</key>
 		<string>AAAViewController</string>
-		<key>APPTicket://BBBViewController</key>
+		<key>HYJAPP://BBBViewController</key>
 		<string>BBBViewController</string>
-		<key>APPTicket://CCCViewController</key>
+		<key>HYJAPP://CCCViewController</key>
 		<string>CCCViewController</string>
 	</dict>
 </dict>

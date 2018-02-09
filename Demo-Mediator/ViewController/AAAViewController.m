@@ -8,7 +8,7 @@
 
 #import "AAAViewController.h"
 
-#import "JuanRouter.h"
+#import "UIViewController+YJRouter.h"
 
 @interface AAAViewController ()
 

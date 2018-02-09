@@ -18,12 +18,9 @@
 		29074D0D1E8BB5530079AF96 /* AAAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29074D0C1E8BB5530079AF96 /* AAAViewController.m */; };
 		29074D101E8BB55A0079AF96 /* BBBViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29074D0F1E8BB55A0079AF96 /* BBBViewController.m */; };
 		29074D131E8BB5630079AF96 /* CCCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 29074D121E8BB5630079AF96 /* CCCViewController.m */; };
-		291A99751F5E5352004E2315 /* Router.plist in Resources */ = {isa = PBXBuildFile; fileRef = 291A99741F5E5352004E2315 /* Router.plist */; };
-		291A99781F6114C9004E2315 /* UIViewController+URLRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 291A99771F6114C9004E2315 /* UIViewController+URLRouter.m */; };
-		296B15841F669AE4005BE2FF /* URLNavigation.m in Sources */ = {isa = PBXBuildFile; fileRef = 296B15831F669AE4005BE2FF /* URLNavigation.m */; };
+		2947AD12202D6D9A00DC8EDB /* Router.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2947AD11202D6D9A00DC8EDB /* Router.plist */; };
 		298D0048202AF01A006BAB96 /* YJRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 298D0047202AF01A006BAB96 /* YJRouter.m */; };
 		298D004B202AF1B9006BAB96 /* UIViewController+YJRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 298D004A202AF1B9006BAB96 /* UIViewController+YJRouter.m */; };
-		29CF20061F569B000053A963 /* JuanRouter.m in Sources */ = {isa = PBXBuildFile; fileRef = 29CF20051F569B000053A963 /* JuanRouter.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,17 +63,11 @@
 		29074D0F1E8BB55A0079AF96 /* BBBViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BBBViewController.m; sourceTree = "<group>"; };
 		29074D111E8BB5630079AF96 /* CCCViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCCViewController.h; sourceTree = "<group>"; };
 		29074D121E8BB5630079AF96 /* CCCViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCCViewController.m; sourceTree = "<group>"; };
-		291A99741F5E5352004E2315 /* Router.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Router.plist; sourceTree = "<group>"; };
-		291A99761F6114C9004E2315 /* UIViewController+URLRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+URLRouter.h"; sourceTree = "<group>"; };
-		291A99771F6114C9004E2315 /* UIViewController+URLRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+URLRouter.m"; sourceTree = "<group>"; };
-		296B15821F669AE4005BE2FF /* URLNavigation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = URLNavigation.h; sourceTree = "<group>"; };
-		296B15831F669AE4005BE2FF /* URLNavigation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = URLNavigation.m; sourceTree = "<group>"; };
+		2947AD11202D6D9A00DC8EDB /* Router.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Router.plist; sourceTree = "<group>"; };
 		298D0046202AF01A006BAB96 /* YJRouter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YJRouter.h; sourceTree = "<group>"; };
 		298D0047202AF01A006BAB96 /* YJRouter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = YJRouter.m; sourceTree = "<group>"; };
 		298D0049202AF1B9006BAB96 /* UIViewController+YJRouter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIViewController+YJRouter.h"; sourceTree = "<group>"; };
 		298D004A202AF1B9006BAB96 /* UIViewController+YJRouter.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+YJRouter.m"; sourceTree = "<group>"; };
-		29CF20041F569B000053A963 /* JuanRouter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JuanRouter.h; sourceTree = "<group>"; };
-		29CF20051F569B000053A963 /* JuanRouter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JuanRouter.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,9 +98,7 @@
 		29074CBE1E8913970079AF96 = {
 			isa = PBXGroup;
 			children = (
-				298D0045202AC45E006BAB96 /* Router */,
-				29CF1FFD1F569A920053A963 /* Juan */,
-				29074CFD1E8A140B0079AF96 /* MediatorManager */,
+				298D0045202AC45E006BAB96 /* YJRouter */,
 				29074CC91E8913970079AF96 /* Demo-Mediator */,
 				29074CE31E8913980079AF96 /* Demo-MediatorTests */,
 				29074CEE1E8913980079AF96 /* Demo-MediatorUITests */,
@@ -130,15 +119,9 @@
 		29074CC91E8913970079AF96 /* Demo-Mediator */ = {
 			isa = PBXGroup;
 			children = (
-				29074D0A1E8BB5410079AF96 /* ViewController */,
 				29074CD01E8913980079AF96 /* ViewController.h */,
 				29074CD11E8913980079AF96 /* ViewController.m */,
-				29074CCD1E8913970079AF96 /* AppDelegate.h */,
-				29074CCE1E8913970079AF96 /* AppDelegate.m */,
-				29074CD31E8913980079AF96 /* Main.storyboard */,
-				29074CD61E8913980079AF96 /* Assets.xcassets */,
-				29074CD81E8913980079AF96 /* LaunchScreen.storyboard */,
-				29074CDB1E8913980079AF96 /* Info.plist */,
+				29074D0A1E8BB5410079AF96 /* ViewController */,
 				29074CCA1E8913970079AF96 /* Supporting Files */,
 			);
 			path = "Demo-Mediator";
@@ -147,6 +130,12 @@
 		29074CCA1E8913970079AF96 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				29074CCD1E8913970079AF96 /* AppDelegate.h */,
+				29074CCE1E8913970079AF96 /* AppDelegate.m */,
+				29074CD31E8913980079AF96 /* Main.storyboard */,
+				29074CD61E8913980079AF96 /* Assets.xcassets */,
+				29074CD81E8913980079AF96 /* LaunchScreen.storyboard */,
+				29074CDB1E8913980079AF96 /* Info.plist */,
 				29074CCB1E8913970079AF96 /* main.m */,
 			);
 			name = "Supporting Files";
@@ -170,14 +159,6 @@
 			path = "Demo-MediatorUITests";
 			sourceTree = "<group>";
 		};
-		29074CFD1E8A140B0079AF96 /* MediatorManager */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = MediatorManager;
-			path = "Demo-Mediator/MediatorManager";
-			sourceTree = "<group>";
-		};
 		29074D0A1E8BB5410079AF96 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
@@ -191,30 +172,16 @@
 			path = ViewController;
 			sourceTree = "<group>";
 		};
-		298D0045202AC45E006BAB96 /* Router */ = {
+		298D0045202AC45E006BAB96 /* YJRouter */ = {
 			isa = PBXGroup;
 			children = (
-				291A99741F5E5352004E2315 /* Router.plist */,
+				2947AD11202D6D9A00DC8EDB /* Router.plist */,
 				298D0046202AF01A006BAB96 /* YJRouter.h */,
 				298D0047202AF01A006BAB96 /* YJRouter.m */,
 				298D0049202AF1B9006BAB96 /* UIViewController+YJRouter.h */,
 				298D004A202AF1B9006BAB96 /* UIViewController+YJRouter.m */,
 			);
-			path = Router;
-			sourceTree = "<group>";
-		};
-		29CF1FFD1F569A920053A963 /* Juan */ = {
-			isa = PBXGroup;
-			children = (
-				296B15821F669AE4005BE2FF /* URLNavigation.h */,
-				296B15831F669AE4005BE2FF /* URLNavigation.m */,
-				29CF20041F569B000053A963 /* JuanRouter.h */,
-				29CF20051F569B000053A963 /* JuanRouter.m */,
-				291A99761F6114C9004E2315 /* UIViewController+URLRouter.h */,
-				291A99771F6114C9004E2315 /* UIViewController+URLRouter.m */,
-			);
-			name = Juan;
-			path = "Demo-Mediator/Juan";
+			path = YJRouter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -329,7 +296,7 @@
 				29074CDA1E8913980079AF96 /* LaunchScreen.storyboard in Resources */,
 				29074CD71E8913980079AF96 /* Assets.xcassets in Resources */,
 				29074CD51E8913980079AF96 /* Main.storyboard in Resources */,
-				291A99751F5E5352004E2315 /* Router.plist in Resources */,
+				2947AD12202D6D9A00DC8EDB /* Router.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -356,13 +323,10 @@
 			files = (
 				29074D0D1E8BB5530079AF96 /* AAAViewController.m in Sources */,
 				29074D131E8BB5630079AF96 /* CCCViewController.m in Sources */,
-				29CF20061F569B000053A963 /* JuanRouter.m in Sources */,
-				291A99781F6114C9004E2315 /* UIViewController+URLRouter.m in Sources */,
 				29074CD21E8913980079AF96 /* ViewController.m in Sources */,
 				29074D101E8BB55A0079AF96 /* BBBViewController.m in Sources */,
 				29074CCF1E8913970079AF96 /* AppDelegate.m in Sources */,
 				298D004B202AF1B9006BAB96 /* UIViewController+YJRouter.m in Sources */,
-				296B15841F669AE4005BE2FF /* URLNavigation.m in Sources */,
 				29074CCC1E8913970079AF96 /* main.m in Sources */,
 				298D0048202AF01A006BAB96 /* YJRouter.m in Sources */,
 			);

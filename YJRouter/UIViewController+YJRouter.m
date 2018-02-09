@@ -20,9 +20,8 @@
 
 + (UIViewController *)openWithUrlString:(NSString *)urlString Params:(NSDictionary *)paramDict fromContentFile:(NSDictionary *)configDict{
     //支持中文
-    NSString* encodedString = [urlString stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
-//    NSString *encodeStr = [encodedString stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]];
-    NSURL *URL = [NSURL URLWithString:encodedString];
+    NSString *encodeStr = [urlString stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]];
+    NSURL *URL = [NSURL URLWithString:encodeStr];
     Class vcClass;//类名
     NSString *home = [NSString stringWithFormat:@"%@://%@",URL.scheme,URL.host];
     
@@ -60,8 +59,8 @@
     if (NSNotFound != [URL.absoluteString rangeOfString:@"?"].location) {
         //截取出参数字符串
         NSString *paramString = [URL.absoluteString substringFromIndex:[URL.absoluteString rangeOfString:@"?"].location+1];
-        paramString = [paramString stringByReplacingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
-
+        paramString = [paramString stringByRemovingPercentEncoding];
+        
         //把参数用&符号分割成数组
         NSArray *paramsArray = [paramString componentsSeparatedByString:@"&"];
         //把数组中的每一组参数转化成字典
@@ -75,5 +74,4 @@
     }
     return [paramsDict mutableCopy];
 }
-//@"APPTicket://AAAViewController?name=哈哈&productId=123456"
 @end

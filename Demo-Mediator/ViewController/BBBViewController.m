@@ -8,7 +8,7 @@
 
 #import "BBBViewController.h"
 
-#import "UIViewController+URLRouter.h"
+#import "UIViewController+YJRouter.h"
 
 @interface BBBViewController ()
 
