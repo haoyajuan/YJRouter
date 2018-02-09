@@ -26,7 +26,7 @@
 }
 
 - (IBAction)buttonAClick:(id)sender {
-    NSString * url = @"HYJAPP://AAAViewController?name=哈哈&productId=123456";
+    NSString * url = @"HYJAPP://AAAViewController?name=哈哈&age=123456";
     UIViewController *vc = [YJRouter openControllerWithURL:url];
     [self.navigationController pushViewController:vc animated:YES];
 }
@@ -37,7 +37,6 @@
 }
 - (IBAction)buttonCClick:(id)sender {
     NSString * url = @"HYJAPP://CCCViewController?name=哈哈&productId=123456";
-
     NSMutableDictionary *dict = [NSMutableDictionary dictionary];
     UIImage *image = [UIImage imageNamed:@"testImag"];
     [dict setValue:image forKey:@"image"];
